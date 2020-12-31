@@ -30,7 +30,7 @@ def jho(feat, label, opts):
     # r2 score
     r2      = r2_score(ytest, ypred)
     print("Mean Square Error (LR_HO):", mse)
-    print("R2 Score (LR_HO):", r2)
+    print("R Square Score (LR_HO):", r2)
     
     lr = {'mse': mse, 'r2': r2, 'xtest': xtest, 'ytest': ytest, 'ypred': ypred}
     
@@ -82,7 +82,7 @@ def jkfold(feat, label, opts):
     r2   = r2_score(ytest2, ypred2)
         
     print("Mean Square Error (LR_K-fold):", mse)
-    print("R2 Score (LR_K-fold):", r2)
+    print("R Square Score (LR_K-fold):", r2)
     
     lr = {'mse': mse, 'r2': r2, 'xtest': xtest2, 'ytest': ytest2, 'ypred': ypred2}
     
@@ -130,7 +130,7 @@ def jloo(feat, label, opts):
     r2   = r2_score(ytest2, ypred2)
         
     print("Mean Square Error (LR_LOO):", mse)
-    print("R2 Score (LR_LOO):", r2)
+    print("R Square Score (LR_LOO):", r2)
     
     lr = {'mse': mse, 'r2': r2, 'xtest': xtest2, 'ytest': ytest2, 'ypred': ypred2}
     
