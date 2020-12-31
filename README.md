@@ -34,7 +34,7 @@ from MLR.dt import jkfold
 ## Output
 * *mdl* : Machine learning model ( It contains several results )  
   + *mse* : mean square error 
-  + *r2*  : r2 score
+  + *r2*  : R square score
 
 
 ## How to choose the validation scheme?
