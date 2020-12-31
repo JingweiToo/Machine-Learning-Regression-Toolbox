@@ -5,6 +5,9 @@
 >  --- [Jingwei Too](https://jingweitoo.wordpress.com/)
 ---
 
+![Wheel](https://github.com/JingweiToo/Machine-Learning-Regression-Toolbox/blob/main/Capture.JPG)
+
+
 ## Introduction
 * This toolbox contains some widely used machine learning algorithms   
 * The < Demo_LR > provide the examples of how to use these methods on benchmark dataset 
@@ -126,8 +129,7 @@ label = Y
 
 # parameters
 maxDepth = 5      # maximum depth of tree
-ho       = 0.3    # ratio of testing data
-opts  = {'ho':ho}
+opts  = {'maxDepth':maxDepth}
 # DT 
 mdl   = jloo(feat, label, opts) 
 
