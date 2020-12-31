@@ -32,6 +32,7 @@ def jho(feat, label, opts):
     mse     = np.mean((ytest - ypred) ** 2)
     # r2 score
     r2      = r2_score(ytest, ypred)
+    
     print("Mean Square Error (DT_HO):", mse)
     print("R Square Score (DT_HO):", r2)
     
