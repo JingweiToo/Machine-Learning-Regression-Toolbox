@@ -8,7 +8,7 @@ from sklearn.metrics import r2_score
 
 def jho(feat, label, opts):
     ho     = 0.3      # ratio of testing set
-    alpha  = 1.0      # constant that multiplies the L1 term
+    alpha  = 1.0      # regularization strength
     
     if 'ho' in opts:
         ho    = opts['ho']
@@ -43,7 +43,7 @@ def jho(feat, label, opts):
 
 def jkfold(feat, label, opts):
     kfold  = 10       # number of k in kfold
-    alpha  = 1.0      # constant that multiplies the L1 term
+    alpha  = 1.0      # regularization strength
     
     if 'kfold' in opts:
         kfold  = opts['kfold']
@@ -97,7 +97,7 @@ def jkfold(feat, label, opts):
 
 
 def jloo(feat, label, opts):
-    alpha  = 1.0      # constant that multiplies the L1 term
+    alpha  = 1.0      # regularization strength
 
     if 'alpha' in opts:
         alpha = opts['alpha']
