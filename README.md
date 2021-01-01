@@ -9,7 +9,7 @@
 
 
 ## Introduction
-* This toolbox contains some widely used machine learning algorithms   
+* This toolbox contains 7 widely used machine learning algorithms   
 * The < Demo_LR > provide the examples of how to use these methods on benchmark dataset 
 
 
@@ -84,11 +84,11 @@ r2  = mdl['r2']
 ```
 
 
-### Example 2 : Linear Regression ( LR ) with hold-out validation
+### Example 2 : LASSO Regression with hold-out validation
 ```code 
 import numpy as np
 # change this to switch algorithm & types of validation (jho, jkfold, jloo)
-from MLR.lr import jho 
+from MLR.lasso import jho 
 import matplotlib.pyplot as plt
 from sklearn import datasets
 
@@ -100,7 +100,8 @@ label = Y
 
 # parameters
 ho    = 0.3    # ratio of testing data
-opts  = {'ho':ho}
+alpha = 1
+opts  = {'alpha':alpha, 'ho':ho}
 # LR 
 mdl   = jho(feat, label, opts) 
 
@@ -158,6 +159,11 @@ r2  = mdl['r2']
 
 | No. | Abbreviation | Name                                                                              | 
 |-----|--------------|-----------------------------------------------------------------------------------|
+| 07  | en           | [Elastic Net](Description.md#elastic-net-en)                                      |
+| 06  | nn           | [Neural Network](Description.md#neural-network-nn)                                |
+| 05  | svr          | [Support Vector Regression](Description.md#support-vector-regression-svr)         |
+| 04  | ridge        | [Ridge Regression](Description.md#ridge-regression)                               |
+| 03  | lasso        | [Lasso Regression](Description.md#lasso-regression)                               |
 | 02  | dt           | [Decision Tree](Description.md#decision-tree-dt)                                  | 
 | 01  | lr           | Linear Regression                                                                 | 
 
