@@ -10,7 +10,7 @@
 
 ## Introduction
 * This toolbox contains 7 widely used machine learning algorithms   
-* The < Demo_LR > provide the examples of how to use these methods on benchmark dataset 
+* The < Demo_LR > and < Demo_LASSO > provide the examples of how to use these methods on benchmark dataset 
 
 
 ## Usage
